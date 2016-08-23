@@ -61,16 +61,16 @@ try
                         )
                     )
                 } -PassThru -Force 
-        } -Verifiable -ModuleName $script:DSCResourceName
+        } -Verifiable
     }
     
     Describe "$($script:DSCResourceName)\Get-TargetResource" {
         Context 'When the system is in the desired state, without DHCP' {
             $testParameters = $defaultParameters
 
-#            InModuleScope -ModuleName $script:DSCResourceName {
+            InModuleScope -ModuleName $script:DSCResourceName {
                 Get-MockSQLAlwaysOnAvailabilityGroupListener
-#            }
+            }
 
             $result = Get-TargetResource @testParameters
 
