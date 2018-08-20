@@ -1,0 +1,14 @@
+{
+    "Source": {
+        "Owner": "PowerShell",
+        "Name": "xPSDesiredStateConfiguration",
+        "Branch": "dev"
+    },
+    "Destination": [
+        {
+            "Owner": "johlju",
+            "Name": "DebugApps",
+            "Branch": "master"
+        }
+    ]
+}
