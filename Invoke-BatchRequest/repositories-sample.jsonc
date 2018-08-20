@@ -245,7 +245,7 @@
         {
             "Owner": "PowerShell",
             "Name": "SystemLocaleDsc"
-        }
+        },
 
         //     // Deprecated repositories
         //     {

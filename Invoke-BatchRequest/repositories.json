@@ -7,8 +7,224 @@
 
     "Destination": [
         {
+            "Owner": "PowerShell",
+            "Name": "xActiveDirectory"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xAzure"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xAzurePack"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xBitlocker"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xChrome"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xCredSSP"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xDatabase"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xDefender"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xDhcpServer"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xDismFeature"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xDnsServer"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xExchange"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xFailOverCluster"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xFirefox"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xHyper-V"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xInternetExplorerHomePage"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xJea"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xMySql"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xPendingReboot"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xPhp"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xPSDesiredStateConfiguration"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xRemoteDesktopAdmin"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xRemoteDesktopSessionHost"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xRobocopy"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xSafeHarbor"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xSCDPM"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xSCOM"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xSCSMA"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xSCSPF"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xSCSR"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xSCVMM"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xSmbShare"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xSystemSecurity"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xWebAdministration"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xWebDeploy"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xWindowsEventForwarding"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xWindowsRestore"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xWindowsUpdate"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xWinEventLog"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "xWordPress"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "ActiveDirectoryCSDsc"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "AuditPolicyDsc"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "CertificateDsc"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "ComputerManagementDsc"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "DFSDsc"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "NetworkingDsc"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "OfficeOnlineServerDsc"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "PSDscResources"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "SecurityPolicyDsc"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "SharePointDsc"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "SqlServerDsc"
+        },
+        {
+            "Owner": "PowerShell",
+            "Name": "SystemLocaleDsc"
+        },
+        {
             "Owner": "PlagueHO",
-            "Name": "iSCSIDsc"
+            "Name": "FileContentDsc"
+        },
+        {
+            "Owner": "PlagueHO",
+            "Name": "FSRMDsc"
+        },
+        {
+            "Owner": "PlagueHO",
+            "Name": "WSManDsc"
         }
     ]
 }
