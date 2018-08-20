@@ -264,5 +264,23 @@
         //         "Owner": "PowerShell",
         //         "Name": "xTimeZone"
         //     }
+
+        // PlagueHO repositories
+        {
+            "Owner": "PlagueHO",
+            "Name": "FileContentDsc"
+        },
+        {
+            "Owner": "PlagueHO",
+            "Name": "FSRMDsc"
+        },
+        {
+            "Owner": "PlagueHO",
+            "Name": "WSManDsc"
+        },
+        {
+            "Owner": "PlagueHO",
+            "Name": "iSCSIDsc"
+        }
     ]
 }
