@@ -4,11 +4,11 @@
         "Name": "xPSDesiredStateConfiguration",
         "Branch": "dev"
     },
+
     "Destination": [
         {
-            "Owner": "johlju",
-            "Name": "DebugApps",
-            "Branch": "master"
+            "Owner": "PlagueHO",
+            "Name": "iSCSIDsc"
         }
     ]
 }
