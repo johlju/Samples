@@ -53,6 +53,8 @@ function Invoke-BatchPullRequest
         $CommitMessage
     )
 
+    Push-Location
+
     # This is tested because on my WSL I needed sudo to run some of the git commands.
     if ($PSVersionTable.Platform -eq 'Unix')
     {
@@ -228,7 +230,11 @@ function Invoke-BatchPullRequest
             {
                 Remove-Item -Path $path
 
-                git add $path
+                <#
+                    Stage the file for deletion. This will also delete the file
+                    from the file system, if it hadn't been previously deleted
+                #>
+                git rm $path
 
                 <#
                     TODO: Should check if the file was the last in the folder and
@@ -255,8 +261,7 @@ function Invoke-BatchPullRequest
         }
     }
 
-    # End up in the clone directory.
-    Set-Location -Path $ClonePath -ErrorAction Stop
+    Pop-Location
 }
 
 $newPullRequestParameters = @{
