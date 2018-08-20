@@ -197,29 +197,28 @@ function Invoke-BatchPullRequest
                 TODO: If exist, it should check if there is something to commit
                       after overwriting the file.
             #>
-            if (-not (Test-Path -Path $path))
+            $newFolderPath = Split-Path -Path $path -Parent
+            if ($newFolderPath)
             {
-                # Create the destination path
-                $newFolderPath = Split-Path -Path $path -Parent
-                if ($newFolderPath)
+                if (-not (Test-Path -Path $newFolderPath))
                 {
-                    # This will do nothing if the folder exist.
+                    # Create the destination path
                     New-Item -Path $newFolderPath -ItemType Directory -Force
                 }
-                else
-                {
-                    <#
-                        Set to current directory if the path did not
-                        contain a parent folder.
-                    #>
-                    $newFolderPath = '.'
-                }
-
-                $sourceItem = Join-Path -Path $sourceRepositoryPath -ChildPath $path
-                Copy-Item -Path $sourceItem -Destination $newFolderPath
-
-                git add $path
             }
+            else
+            {
+                <#
+                    Set to current directory if the path did not
+                    contain a parent folder.
+                #>
+                $newFolderPath = '.'
+            }
+
+            $sourceItem = Join-Path -Path $sourceRepositoryPath -ChildPath $path
+            Copy-Item -Path $sourceItem -Destination $newFolderPath
+
+            git add $path
         }
 
         # Remove files
@@ -229,7 +228,7 @@ function Invoke-BatchPullRequest
             {
                 Remove-Item -Path $path
 
-                git add $patha
+                git add $path
 
                 <#
                     TODO: Should check if the file was the last in the folder and
