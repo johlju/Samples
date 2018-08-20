@@ -109,6 +109,11 @@ function Invoke-BatchPullRequest
 
     foreach ($repository in $destinationRepository)
     {
+        if ($repository.Owner -eq $sourceRepository.Owner -and $repository.Name -eq $sourceRepository.Name)
+        {
+            Write-Warning -Message ('The repository {0}/{1} was found as both source and destination repository. Skipping' -f $repository.Name, $sourceRepository.Name)
+        }
+
         Write-Verbose -Message ('Evaluating if pull request is needed for repository {0}.' -f $repository.Name)
 
         # Make sure we are in the root of the clone folder
